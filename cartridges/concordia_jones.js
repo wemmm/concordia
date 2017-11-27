@@ -2,28 +2,25 @@
 var gameData = {
 	commandCounter : 0,
 	gameOver : false,
-	introText : 'Welcome to the Crooked Gulch Gold Mine. What it lacks in safety precautions it more than makes up for in gold. Watch your step and you might just make it out with riches beyond your wildest imagination!',
+	introText : 'You are Concordia Jones the paranormal investigator. As you have a third eye in the centre of your forehead, it\'s safe to say that you yourself are also paranormal.',
 	outroText : 'Thanks For playing!',
 	player : {
-		currentLocation : 'MineEntrance',
+		currentLocation : 'Office',
 		inventory : {},
-		lightSource : false
 	},
 	map : {
-		'MineEntrance' : {
+		'Office' : {
 			firstVisit : true,
-			displayName : 'Mine Entrance',
-			description : 'You stand at the partially collapsed entrance to the mine. Nearby there is a sign sticking out of a pile of miner helmets.',
+			displayName : 'Your Office',
+			description : 'This is your office. Office may be a strong word in light of the fact that it\'s actually a corner of your apartment that you\'ve crammed a desk and chairs into. A hot pink light shines through the window from the many brightly coloured signs of the neon district, illuminating the otherwise dim room. So tech noir.',
 			interactables : {
-				helmets : { look : 'It is a pile of miner helmets with lights on them. They seem to still be operational.' },
-				sign : { look : 'The sign reads "Crooked Gulch Gold Mine" and has a note tacked to the bottom of it.' },
-				note : { look : 'Written in an untidy scroll the note reads "Generator blew. Lights out."' }
+				desk : { look : 'Covered in pages of notes you\'ve scrawled in order to feign an air of legitimacy.' },
+				window : { look : 'You look out at the neon district. A whole district dedicated to the manufacture of neon signs. You briefly meditate on how that seems pretty reasonable and realistic.' }
 			},
 			items : {
 				helmet : {
 					displayName : 'Miner Helmet',
 					description : 'A trusty old miner helmet covered in minor dents. Still seems sturdy and the light works.',
-					use : function(){return useLightSource();},
 					quantity : 1,
 					hidden : true
 				}
@@ -53,7 +50,6 @@ var gameData = {
 		'End' : {
 			firstVisit : true,
 			description : 'placeholder',
-			setup : function(){end();}
 		}
 	}
 };
@@ -68,16 +64,3 @@ module.exports.gameData = gameData;
 module.exports.gameActions = gameActions;
 
 // === Helper Functions ===
-function end(){
-	if(gameData.player.lightSource){
-		gameData.map['End'].description = 'You found more gold than you can carry.';
-	} else {
-		gameData.map['End'].description = 'It is so dark, you can\'t see anything! You fall down an unseen crevice. Your body is never recovered.';
-	}
-	gameData.gameOver = true;
-}
-
-function useLightSource(){
-	gameData.player.lightSource = true;
-	return 'You click on the light attached to the helmet.'
-}
