@@ -15,7 +15,11 @@ var gameData = {
 			description : 'This is your office. Office may be a strong word in light of the fact that it\'s actually a corner of your apartment that you\'ve crammed a desk and chairs into. A hot pink light shines through the window from the many brightly coloured signs of the neon district, illuminating the otherwise dim room. So tech noir.',
 			interactables : {
 				desk : { look : 'Covered in pages of notes you\'ve scrawled in order to feign an air of legitimacy.' },
-				window : { look : 'You look out at the neon district. A whole district dedicated to the manufacture of neon signs. You briefly meditate on how that seems pretty reasonable and realistic.' }
+				self : { look : 'You always wear your trench coat during work hours, indoors or outdoors. How else are people meant to correctly identify that you\'re a paranormal investigator?'},
+				window : {
+					look : 'You look out at the neon district. A whole district dedicated to the manufacture of neon signs. You briefly meditate on how that seems pretty reasonable and realistic.',
+					use : 'You open the window. You think you can hear the dulcet tones of synthwave music in the warm air.'
+				}
 			},
 			items : {
 				helmet : {
