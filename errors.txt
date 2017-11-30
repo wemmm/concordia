@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 389: style property gui is not known.
+    background ""gui/overlay/main_menu.png""
+                    ^
+
+Ren'Py Version: Ren'Py 6.99.13.2919

@@ -1,0 +1,71 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While loading <'Image' u'gui/main_menu.png'>:
+IOError: Couldn't find file 'gui/main_menu.png'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/python.py", line 1764, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in <module>
+    ui.interact()
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/ui.py", line 287, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/core.py", line 2553, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/core.py", line 2916, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/core.py", line 1980, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 430, in renpy.display.render.render_screen (gen/renpy.display.render.c:6938)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/screen.py", line 625, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/im.py", line 503, in render
+    texture = cache.get(self, texture=True)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/im.py", line 212, in get
+    surf = image.load()
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/im.py", line 553, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/loader.py", line 548, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'gui/main_menu.png'.
+
+Darwin-16.7.0-x86_64-i386-64bit
+Ren'Py 6.99.13.2919
+Concordia Jones 1.0

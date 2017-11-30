@@ -20,13 +20,11 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    show concordia
 
     # These display lines of dialogue.
 
-    c "You've created a new Ren'Py game."
-
-    c "Once you add a story, pictures, and music, you can release it to the world!"
+    c "lol"
 
     # This ends the game.
 
