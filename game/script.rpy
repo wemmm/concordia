@@ -14,18 +14,40 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg placeholder
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show concordia
+    # show concordia
 
     # These display lines of dialogue.
 
-    c "lol"
+    "You are Concordia Jones."
 
-    # This ends the game.
+    scene bg cityscape
+    with fade
+
+    "You live in the glorious neon retro future/past."
+
+    "The neon district is your home."
+
+    "The rent's pretty low on account of the fact that it's always uncomfortably brightly lit."
+
+    "Which works well for you as you don't exactly make a huge amount of money as a paranormal detective."
+
+    "(Or a detective who is paranormal.)"
+
+    scene bg placeholder
+    with fade
+
+    show concordia pensive
+
+    c "Another day of solving mysteries on the mean streets of the Neon District..."
+
+    show concordia happy 1
+
+    c "Is definitely what I would say if I had any mysteries to solve."
 
     return
