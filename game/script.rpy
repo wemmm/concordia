@@ -4,6 +4,7 @@
 # name of the character.
 
 define c = Character("Concordia")
+define s = Character("Sebastian")
 
 
 # The game starts here.
@@ -42,12 +43,17 @@ label start:
     scene bg placeholder
     with fade
 
-    show concordia pensive
+    show concordia pensive at right
 
     c "Another day of solving mysteries on the mean streets of the Neon District..."
 
-    show concordia happy 1
+    show concordia happy 1 at right
 
     c "Is definitely what I would say if I had any mysteries to solve."
+
+    show sebastian at left
+    show concordia looking at right
+
+    s "What in the name of all that is sweet and savoury!"
 
     return
