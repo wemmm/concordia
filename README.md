@@ -31,4 +31,4 @@ The apparently noteworthy and sort of 16-bit looking adventures of Concordia Jon
 
 # Credits
 
-Concordia Jones is a thing from the mind of my collaborator/art partner/hive mind associate Thomas Leeks.
+Various articles of design and writing were co-created with the deeply appreciated assistance of my long-time collaborator/art partner/hive mind associate "Dodecahedron Jones".

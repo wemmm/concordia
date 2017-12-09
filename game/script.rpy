@@ -44,7 +44,9 @@ label start:
 
     s "What in the name of all that is sweet and savoury?"
 
-    s "It's already ten o'clock, Concordia. At least turn the lights on."
+    s "It's already ten o'clock, Concordia. At least open the curtains or something."
+
+    # Office background goes here when I actually have one
 
     "This is your social media manager and/or brand awareness officer. He's a mostly ordinary cat, save for the fact that he's had human arms grafted on to his body."
 
@@ -78,6 +80,11 @@ label start:
 
 label scene2:
 
-        s "Anyway. Another day, another bitcoin."
+    s "Anyway. Another day, another bitcoin."
 
-        s "Let's check your website and see if anyone's made an enquiry."
+    s "Let's check your website and see if anyone's made an enquiry."
+
+    scene bg computeroff
+    with pixellate
+
+    s "What an antique."
