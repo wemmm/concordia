@@ -1,34 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 17, in script
-    scene bg placeholder
-  File "game/script.rpy", line 17, in script
-    scene bg placeholder
-RuntimeError: dictionary changed size during iteration
+  File "game/script.rpy", line 2, in script
+    define s = Character([sebastian_name])
+  File "game/script.rpy", line 2, in <module>
+    define s = Character([sebastian_name])
+NameError: name 'sebastian_name' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/bootstrap.py", line 305, in bootstrap
-    renpy.main.main()
-  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/main.py", line 499, in main
-    run(restart)
-  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/main.py", line 147, in run
-    renpy.execution.run_context(True)
-  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/execution.py", line 795, in run_context
-    context.run()
-  File "game/script.rpy", line 17, in script
-    scene bg placeholder
-  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/python.py", line 1283, in begin
-    self.current = Rollback()
-  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/python.py", line 1047, in __init__
-    self.context = renpy.game.context().rollback_copy()
-  File "game/script.rpy", line 17, in script
-    scene bg placeholder
-  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/execution.py", line 260, in __init__
-    for k, v in context.music.iteritems():
-RuntimeError: dictionary changed size during iteration
+  File "game/script.rpy", line 2, in script
+    define s = Character([sebastian_name])
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/ast.py", line 1882, in execute
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/python.py", line 1788, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 2, in <module>
+    define s = Character([sebastian_name])
+NameError: name 'sebastian_name' is not defined
 
 Darwin-16.7.0-x86_64-i386-64bit
 Ren'Py 6.99.13.2919
