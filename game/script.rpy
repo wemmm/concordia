@@ -60,8 +60,10 @@ label start:
 
             c "Hey, Sebastian."
 
-            s "It's @magical_pitchforque_1989 to you. But I guess I can't expect you to remember that."
+            show sebastian meh at left
+            s "It's {color=#0FF}@magical_pitchforque_1989{/color} to you. But I guess I can't expect you to remember that."
 
+            show concordia doubtful at right
             "You have no intention of referring to him by his Twitter handle."
 
             jump scene2
@@ -72,6 +74,7 @@ label start:
 
             c "Good morning, Mr. Pitchforqué."
 
+            show sebastian smug at left
             s "So formal! I like it. Very on-brand."
 
             jump scene2
@@ -80,6 +83,9 @@ label start:
 
 label scene2:
 
+
+    show sebastian cheerful at left
+    show concordia looking at right
     s "Anyway. Another day, another bitcoin."
 
     s "Let's check your website and see if anyone's made an enquiry."
