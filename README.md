@@ -16,17 +16,18 @@ $$$        $$$,     $$$$$$ "Y$c$$$$$        $$$,     $$$$$$$$$c    $$,    $$$$$c
                 The Paranormal Investigator Who Is Herself Paranormal
 ```
 
-# Wat
+![what](https://github.com/wemmm/concordia/blob/master/what.PNG)
 
-Another text-based adventure game! But also with images, so not actually an entirely text-based adventure game. More of a visual novel really.
+Another text-based adventure game! But also with images, so not actually an entirely text-based adventure game. More of a visual novel really. This is probably going to be a lengthy process because I need to make assets and write stuff.
 
-This is probably going to be a lengthy process because I need to make assets and write stuff. 
+The apparently noteworthy and sort of 16-bit looking adventures of Concordia Jones, a paranormal investigator with three eyes, and her cat/friend/social media manager Sebastian Pitchforqué. Investigate mysteries of a paranormal or non-paranormal nature in the Neon District of Future Retro City!
 
-# Tech
+![tech](https://github.com/wemmm/concordia/blob/master/tech.PNG)
 
 * Ren'Py
 * Python
 * Pixaki
+* A bunch of old sketches
 
 # Credits
 
