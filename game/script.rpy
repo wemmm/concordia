@@ -94,3 +94,6 @@ label scene2:
     with pixellate
 
     s "What an antique."
+
+    scene bg computeron
+    with dissolve
