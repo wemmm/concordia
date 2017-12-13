@@ -29,6 +29,10 @@ The apparently noteworthy and sort of 16-bit looking adventures of Concordia Jon
 * Pixaki
 * A bunch of old sketches
 
+# Usage
+
+This will eventually be an actual cross-platform application rather than a web-based thing. Expect some sort of useful link here when I have something worth demoing.
+
 # Credits
 
-Various articles of design and writing were co-created with the deeply appreciated assistance of my long-time collaborator/art partner/hive mind associate "Dodecahedron Jones".
+Various articles of design and writing were co-created with the deeply appreciated assistance of my long-time collaborator/art partner/hive mind associate "The Local Poet".
