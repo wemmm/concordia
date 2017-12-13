@@ -1399,8 +1399,6 @@ style nvl_button:
 style nvl_button_text:
     properties gui.button_text_properties("nvl_button")
 
-
-
 ################################################################################
 ## Mobile Variants
 ################################################################################

@@ -21,3 +21,9 @@ label scene2:
     c "I can't afford flair."
 
     "You probably could afford to have flair if [seb_name] spent more time working and less time trading novelty sunglasses online."
+
+    c "Hey, we have an email!"
+
+    nvlNarrator "Dear Ms. Jones,"
+
+    nvlNarrator "My name is Vasily Octothorpe and I am having a problem of a paranormal nature."

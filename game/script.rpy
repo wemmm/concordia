@@ -1,5 +1,10 @@
 ﻿define c = Character("Concordia")
 define s = DynamicCharacter("seb_name")
+define nvlNarrator = Character(None, kind=nvl, what_xalign=0.5, window_xalign=0.5, what_italic=True)
+
+init:
+    style nvl_vbox:
+        xfill True
 
 
 # The game starts here.
