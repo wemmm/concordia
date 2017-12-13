@@ -46,7 +46,7 @@ label start:
 
     s "It's already ten o'clock, Concordia. At least open the curtains or something."
 
-    # Office background goes here when I actually have one
+    # Office background goes here when I actually have one (fade in)
 
     "This is your social media manager and/or brand awareness officer. He's a mostly ordinary cat, save for the fact that he's had human arms grafted on to his body."
 
@@ -64,7 +64,7 @@ label start:
             s "It's {color=#0FF}@magical_pitchforque_1989{/color} to you. But I guess I can't expect you to remember that."
 
             show concordia doubtful at right
-            "You have no intention of referring to him by his Twitter handle."
+            "You have no intention of referring to him by his Chitter handle."
 
             jump scene2
 
@@ -80,20 +80,3 @@ label start:
             jump scene2
 
     return
-
-label scene2:
-
-
-    show sebastian cheerful at left
-    show concordia looking at right
-    s "Anyway. Another day, another bitcoin."
-
-    s "Let's check your website and see if anyone's made an enquiry."
-
-    scene bg computeroff
-    with pixellate
-
-    s "What an antique."
-
-    scene bg computeron
-    with dissolve
