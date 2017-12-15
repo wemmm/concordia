@@ -42,7 +42,7 @@ label scene2:
     show sebastian meh at left
     with easeinleft
 
-    show concordia doubtful at right
+    show concordia dubious at right
     with easeinright
 
     c "You've been putting the business cards in phone boxes?"

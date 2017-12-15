@@ -1,31 +1,31 @@
-Wed Dec 13 16:55:02 2017
+Thu Dec 14 10:29:22 2017
 Darwin-16.7.0-x86_64-i386-64bit
 Ren'Py 6.99.13.2919
  
 
-Bootstrap to the start of init.init took 0.10s
-Early init took 0.00s
-Loader init took 0.01s
+Bootstrap to the start of init.init took 0.07s
+Early init took 0.01s
+Loader init took 0.02s
 Loading error handling took 0.02s
-Loading script took 0.06s
+Loading script took 0.07s
 Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.08s
-Loading analysis data took 0.05s
+Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.05s
+Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.16s
+Creating interface object took 0.15s
 Cleaning stores took 0.00s
 Init translation took 0.05s
-Build styles took 0.01s
+Build styles took 0.00s
 Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.07s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
@@ -181,18 +181,22 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 0.939440965652s
+Total time until interface ready: 0.867870092392s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.021741 seconds.
-- Frame drawn at 0.037273 seconds.
-- Frame drawn at 0.051513 seconds.
-- Frame drawn at 0.062858 seconds.
-- 0.062858 seconds to render 5 frames.
+- Frame drawn at 0.021968 seconds.
+- Frame drawn at 0.034844 seconds.
+- Frame drawn at 0.051438 seconds.
+- Frame drawn at 0.063759 seconds.
+- 0.063759 seconds to render 5 frames.
+
+primary display bounds: (0, 0, 1440, 900)
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1440, 900) drawable=(2880, 1800)
 Cleaning stores took 0.00s
-Init translation took 0.20s
+Init translation took 0.19s
 Build styles took 0.01s
-Load screen analysis took 0.02s
+Load screen analysis took 0.01s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
