@@ -22,9 +22,11 @@ label scene2:
 
     "You probably could afford to have flair if [seb_name] spent more time working and less time trading novelty sunglasses online."
 
+    "Or if you had a real job."
+
     c "Hey, we have an email!"
 
-    nvlNarrator "to: concordia.j@investigating4u.com\nfrom: mrvoctothorpe@neonsigns.biz"
+    nvlNarrator "to: {color=#0FF}concordia.j@investigating4u.com{/color}\nfrom: {color=#0FF}mrvoctothorpe@neonsigns.biz{/color}"
 
     nvlNarrator "Dear Ms. Jones,"
 
@@ -46,3 +48,95 @@ label scene2:
     with easeinright
 
     c "You've been putting the business cards in phone boxes?"
+
+    s "You need all the help you can get."
+
+    show sebastian cheerful at left
+
+    s "And this guy seems to have a paranormal issue of some kind!"
+
+    s "Isn't that supposed to be one of those things that you deal with?"
+
+    show sebastian meh at left
+    s "You know. For money."
+
+    show concordia dubious at right
+    c "You know I really don't think- {nw}"
+
+    show sebastian cheerful at left
+    s "GREAT WORK YOU'RE SO AMAZING THANK YOU SO MUCH YOU'RE SUCH A GREAT HELP AND A WONDERFUL SOCIAL MEDIA MANAGER/BRAND AWARENESS OFFICER I WILL RECOMMEND YOUR SERVICES TO A FRIEND A++++++ WOULD HIRE AGAIN MAYBE I OUGHT TO PAY YOU MORE OR AT ALL{nw}"
+
+    s "So that's sorted. I'll email him back and find out what the deal is."
+
+    "The situation might well be dubious, but potentially having something to investigate might not be a terrible thing."
+
+    "But you don't really have any details yet."
+
+    "So that means that you can let [seb_name] handle the situation, right?"
+
+    menu:
+
+        "Yeah, that's probably fine.":
+
+            show concordia looking at right
+            c "So..."
+
+            c "You're handling this, right?"
+
+            c "That means I can go out and... do something useful."
+
+            show sebastian meh at left
+            s "I guess."
+
+            s "But I'm pretty sure you mean 'go and sulk in the park'."
+
+            show concordia happy 1 at right
+            "[seb_name] underestimates the sheer number of different places you like to sulk."
+
+            show sebastian cheerful at left
+            s "But..."
+
+            s "Okay."
+
+            s "Go and have an angsty inner monologue somewhere for a bit."
+
+            s "Get it out of your system, then come back here and do some work."
+
+            hide concordia happy 1 at right
+            with easeoutright
+
+            hide sebastian cheerful at left
+            with easeoutleft
+
+            jump scene3
+
+        "...I'll email the guy back, [seb_name].":
+
+            show sebastian meh at left
+            s "I'm the social media manager, though."
+
+            show sebastian cheerful at left
+            s "On the other hand, it's nice to see you giving a crap about your ostensible business!"
+
+            s "Just be polite and don't put him off, alright?"
+
+            s "And tell him to use our hashtag."
+
+            show sebastian smug at left
+            s "{color=#0FF}#3eyeghostguy{/color}"
+
+            c "I feel like that's potentially misleading because I'm not-{nw}"
+
+            s "Shush."
+
+            s "I'm going to go out and get us some coffee."
+
+            show sebastian cheerful at left
+            s "To help us WORK."
+
+            hide sebastian cheerful at left
+            with easeoutleft
+
+            jump scene3
+
+    return

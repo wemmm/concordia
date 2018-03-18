@@ -1,0 +1,87 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script2.rpy", line 65, in script
+    s "GREAT WORK {[seb_name].upper()} THANK YOU SO MUCH YOU'RE SUCH A GREAT HELP"
+Exception: Unknown text tag u'Sebastian.upper()'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script2.rpy", line 65, in script
+    s "GREAT WORK {[seb_name].upper()} THANK YOU SO MUCH YOU'RE SUCH A GREAT HELP"
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/ast.py", line 624, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/exports.py", line 1173, in say
+    who(what, *args, **kwargs)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/character.py", line 911, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/character.py", line 747, in do_display
+    **display_args)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/character.py", line 523, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/ui.py", line 287, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/core.py", line 2553, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/core.py", line 2916, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/core.py", line 1980, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 430, in renpy.display.render.render_screen (gen/renpy.display.render.c:6938)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/screen.py", line 625, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/layout.py", line 1093, in render
+    st, at)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/text/text.py", line 1774, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/text/text.py", line 550, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "/Users/jenniferwem/Misc/renpy-6.99.13-sdk/renpy/text/text.py", line 1048, in segment
+    raise Exception("Unknown text tag %r" % text)
+Exception: Unknown text tag u'Sebastian.upper()'
+
+Darwin-17.4.0-x86_64-i386-64bit
+Ren'Py 6.99.13.2919
+Concordia Jones 1.0
