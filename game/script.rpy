@@ -6,7 +6,6 @@ init:
     style nvl_vbox:
         xfill True
 
-
 # The game starts here.
 
 label start:
@@ -42,6 +41,12 @@ label start:
 
     c "Is definitely what I would say if I had any mysteries to solve."
 
+    "You do not have any mysteries to solve."
+
+    "But you can't really be held accountable for that."
+
+    "It just happens that the majority of mysterious occurrences have fairly mundane causes."
+
     show sebastian cheerful at left
     with easeinleft
 
@@ -53,7 +58,7 @@ label start:
 
     # Office background goes here when I actually have one (fade in)
 
-    "This is your social media manager and/or brand awareness officer. He's a mostly ordinary cat, save for the fact that he's had human arms grafted on to his body."
+    "This is your social media manager and/or brand awareness officer. He's mostly an ordinary cat, save for the fact that he's had human arms grafted on to his body."
 
     menu:
 

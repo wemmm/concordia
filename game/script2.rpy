@@ -132,9 +132,15 @@ label scene2:
             s "I'm going to go out and get us some coffee."
 
             show sebastian cheerful at left
-            s "To help us WORK."
+            s "To help us {color=#04E762}W{/color}{color=#F5B700}O{/color}{color=#DC0073}R{/color}{color=#008BF8}K{/color}."
 
             hide sebastian cheerful at left
+            with easeoutleft
+
+            show concordia doubtful at right
+            "How does he do that?"
+
+            hide concordia doubtful at left
             with easeoutleft
 
             jump scene3
