@@ -140,8 +140,8 @@ label scene2:
             show concordia doubtful at right
             "How does he do that?"
 
-            hide concordia doubtful at left
-            with easeoutleft
+            hide concordia doubtful at right
+            with easeoutright
 
             jump scene3
 
