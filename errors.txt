@@ -2,8 +2,16 @@
 errors listed below, and try again.
 
 
-File "game/script3.rpy", line 70: expected ':' not found.
-    label scene27
-                 ^
+File "game/script3.rpy", line 99: reached end of line when expecting ':'.
+    if email == "profesh"
+                         ^
+
+File "game/script3.rpy", line 108: reached end of line when expecting ':'.
+    if email == "hashtag"
+                         ^
+
+File "game/script3.rpy", line 123: reached end of line when expecting ':'.
+    if email == "authentic?"
+                            ^
 
 Ren'Py Version: Ren'Py 6.99.13.2919

@@ -35,6 +35,8 @@ label start:
     show concordia pensive at right
     with dissolve
 
+    # TODO: Write a real intro pls
+
     c "Another day of solving mysteries on the mean streets of the Neon District..."
 
     show concordia happy 1 at right

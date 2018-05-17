@@ -30,6 +30,8 @@ menu:
 
                 c "I guess."
 
+                $ email = "profesh"
+
                 jump emailChosen
 
             "Nah.":
@@ -54,6 +56,8 @@ menu:
 
                 c "...it's quite catchy."
 
+                $ email = "hashtag"
+
                 jump emailChosen
 
             "Nope. Nope. Can't do it.":
@@ -74,6 +78,8 @@ menu:
 
                 c "{i}Especially{/i} when it's incongruous with our social media presence."
 
+                $ email = "authentic?"
+
                 jump emailChosen
 
             "Actually, this may not be a great idea.":
@@ -84,6 +90,103 @@ menu:
 
         label emailChosen:
 
-          c "lol placeholder"
+            show concordia happy 1 at right
+
+            c "Hah."
+
+            c "Totally did some work."
+
+            if email == "profesh":
+
+                c "In a suitably professional manner."
+
+                c "Because I'm a young and dynamic entepreneur!"
+
+                show concordia dubious at right
+                c "..."
+
+            if email == "hashtag":
+
+                c "In a... like... on-brand way?"
+
+                c "{color=#0FF}#3eyeghostguy{/color}!"
+
+                c "I should be an internet raconteur."
+
+                "You wonder if you can get paid to be witty on the internet."
+
+                show concordia dubious at right
+                c "Is that how [seb_name] makes a living?"
+
+                "Basically, yes."
+
+            if email == "authentic?":
+
+                c "I'm living my truth!"
+
+                c "It probably isn't a good idea!"
+
+                c "Whatever!"
+
+            c "So that's that done."
+
+            "You wonder if there's any other work-like stuff you could do."
+
+            "Sebastian probably won't be back for a little while on account of his extremely complicated coffee order."
+
+            menu:
+
+                "Well...":
+
+                    c "It's not that I'm suspicious, but..."
+
+                    c "I mean, we don't really get emails very often."
+
+                    "You don't really get much business at all, actually, so it's probably a reasonable thing to be suspicious of."
+
+                    c "I think I should probably look this guy up."
+
+                    c "I'm a detective, after all!"
+
+                    c "Not an internet detective, but still. Growth mindset."
+
+                    jump googling
+
+                "No.":
+
+                    c "Nope."
+
+                    c "I did something already."
+
+                    c "So now I'm going to lie down on the sofa."
+
+                    jump procrastinating
+
+            label googling:
+
+                scene bg computeron
+                with pixellate
+
+                c "Vasily Octothorpe, huh?"
+
+                c "Not much here... is it a real name?"
+
+                c "...a poetry website?"
+
+                c "Ew."
+
+                $ whoIsVasily = "beat poet"
+
+                jump scene8
+
+            label procrastinating:
+
+                "You lie down on the sofa."
+
+                "It's been quite a challenging day. You need to gather your strength."
+
+                $ whoIsVasily = "a mystery"
+
+                jump scene8
 
 return
